@@ -1,5 +1,5 @@
 // Agregamos los listener de los enlaces para filtrar por categoria.
-const enlaces = document.querySelectorAll('#navbarNavDropdown a');
+const enlaces = document.querySelectorAll('#navbarSupportedContent a');
 console.log(enlaces);
 enlaces.forEach((elemento) => {
     elemento.addEventListener('click', (evento) => {
@@ -9,3 +9,37 @@ enlaces.forEach((elemento) => {
 
     });
 });
+
+/*	gallery */
+$(document).ready(function(){
+
+    $(".filter-button").click(function(){
+        var value = $(this).attr('data-filter');
+        
+        if(value == "all")
+        {
+            $('.filter').show('1000');
+        }
+        else
+        {
+            $(".filter").not('.'+value).hide('3000');
+            $('.filter').filter('.'+value).show('3000');
+            
+        }
+
+	        	if ($(".filter-button").removeClass("active")) {
+			$(this).removeClass("active");
+		    }
+		    	$(this).addClass("active");
+	    	});
+});
+/*	end gallery */
+
+$(document).ready(function(){
+    $(".fancybox").fancybox({
+        openEffect: "none",
+        closeEffect: "none"
+    });
+});
+   
+  
