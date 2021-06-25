@@ -1,6 +1,7 @@
+
 // Agregamos los listener de los enlaces para filtrar por categoria.
 const enlaces = document.querySelectorAll('#navbarSupportedContent a');
-console.log(enlaces);
+
 enlaces.forEach((elemento) => {
     elemento.addEventListener('click', (evento) => {
         enlaces.forEach((enlace) => enlace.classList.remove('active'));
@@ -35,11 +36,3 @@ $(document).ready(function(){
 });
 /*	end gallery */
 
-$(document).ready(function(){
-    $(".fancybox").fancybox({
-        openEffect: "none",
-        closeEffect: "none"
-    });
-});
-   
-  
