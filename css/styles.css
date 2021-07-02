@@ -1,15 +1,15 @@
 @font-face {
     font-family: BebasNeue;
-    src: url(../fonts/BebasNeue-Regular.ttf);
+    src: url(../css/font/BebasNeue-Regular.ttf);
 }
 
 @font-face {
     font-family: Darker;
-    src: url(../fonts/Darker_Grotesque/DarkerGrotesque-SemiBold.ttf);
+    src: url(../css/font/Darker_Grotesque/DarkerGrotesque-SemiBold.ttf);
 }
 @font-face {
     font-family: Ligth;
-    src: url(../fonts/Darker_Grotesque/DarkerGrotesque-Light.ttf);
+    src: url(../css/font/Darker_Grotesque/DarkerGrotesque-Light.ttf);
 }
 
 body {
@@ -232,27 +232,21 @@ nav {
 
 /*	end gallery */
 /* Footer */
-small {
-    font-size: calc(12px + (15 - 12) * ((100vw - 360px) / (1600 - 360))) !important
-}
-
-.bold-text {
-    color: #989c9e !important
-}
-
-.mt-55 {
-    margin-top: calc(50px + (60 - 50) * ((100vw - 360px) / (1600 - 360))) !important
-}
-
-h3 {
-    font-size: calc(34px + (40 - 34) * ((100vw - 360px) / (1600 - 360))) !important
-}
 
 .social {
-    font-size: 21px !important
+    font-size: 25px !important
+}
+.social a {
+    text-decoration: none;
+    color: gainsboro;
+}
+.social a :hover{
+    color: black;
 }
 
 .rights {
-    font-size: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important
+    font-size: calc(12px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important;
+    font-family: BebasNeue;
+    color: white;
 }
 /* end Fotter */

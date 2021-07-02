@@ -9,9 +9,13 @@
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
   <!-- Bootstrap CSS -->
+  
   <link rel="stylesheet" href="../css/bootstrap.min.css" />
   <link rel="stylesheet" href="../css/styles.css" />
   <link rel="stylesheet" href="../css/animate.css" />
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  
+
   <title>Developer Web</title>
 </head>
 
@@ -24,13 +28,13 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav ml-auto" id="menulink">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="../index.html">
+          <a class="nav-link " aria-current="page" href="../index.html">
             Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../page/about.html"> About</a>
+          <a class="nav-link active" href="../page/about.html"> About</a>
         </li>
 
         <li class="nav-item">
@@ -47,117 +51,86 @@
   </nav>
 
   <div class="main">
-   
     <br>
-    <br>
-    <br>
+
     <section id="about">
       <div class="container">
         <br /><br />
-        <h2 class="d-flex justify-content-end wow bounceInDown title"
-          style="font-size: 9vw; font-family: BebasNeue; margin-top: 50px">
-          ABOUT
-        </h2>
         <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2">
-          <div class="col item">
-            <span style="
-                  font-size: 2.5vw;
-                  font-family: 'Lucida Sans', 'Lucida Sans Regular',
-                    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
-                    sans-serif;
-                ">Who is
-            </span>
-            <h2 class="subtitule">¡Creemos proyectos juntos!</h2>
+          <div class="col item bg-da">
+
+            <h2 class="subtitule ">¡Creemos proyectos juntos!</h2>
             <div class="barra"></div>
             <p class="pf1">
-              Hola! Soy un desarrollador web, empece desde el 2018 y trabajo
-              de freelance, soy Tecnico Superior Universitario en Desarrollo
-              de Software Multiplataforma, actualmente estudio ingeniera en
-              Desarrollo y Gestion de Software. Amo desarrollar proyectos de
-              todo tipo desde FrontEnd hasta BackEnd y asi nunca parar de
-              aprender!
+              Hola! , empece en el desarrollador web desde el 2018 y trabajo
+              como freelance, soy Tecnico Superior Universitario en Desarrollo
+              de Software Multiplataforma, actualmente estudio el ultimo semestre en Ingeniera en
+              Desarrollo y Gestion de Software.
+              <br>
+              <br>
+              Amo desarrollar proyectos de
+              todo tipo desde FrontEnd, BackEnd, APIS etc. me gustan los retos como aprender nuevas tecnologias y hasta
+              crear
+              algo que aun no ha sido desarrolado.
             </p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
 
-              <button href="# " class="btn btn-info ">
-                Descargar CV </i>
-              </button>
+              <button class="btn btn btn-outline-primary btn-dowload">
+                <span class='text'>Descargar CV </span><span class="icon"><i
+                    class="fa fa-download"></i></span>
+                  </button>
+
             </div>
           </div>
           <div class="col item">
-            <img class="img-fluid" style="margin-top: 8vw" src="../img/about.png" alt="" />
+            <lottie-player src="css/img/about.json" background="transparent" speed="1"
+                style="width: 35vw; height: 35vw;" loop autoplay></lottie-player>
           </div>
         </div>
+
         <br />
         <br />
         <br />
-        
+
       </div>
+
     </section>
-    
-  <footer class="bg-dark text-white">
-    <br>
-    <div class="container ">
-      <div class="d-flex justify-content-center ">
-        <div class="container col-11">
-          
-            
-            
-              <div class="row ">
-                <div class="col-xl-8 col-md-4 col-sm-4 col-12 my-auto mx-auto a">
-                    <h3 class="text-muted mb-md-0 mb-5 bold-text">Pepper.</h3>
-                </div>
-                <div class="col-xl-2 col-md-4 col-sm-4 col-12">
-                    <h6 class="mb-3 mb-lg-4 bold-text "><b>MENU</b></h6>
-                    <ul class="list-unstyled">
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Blog</li>
-                        <li>Portfolio</li>
-                    </ul>
-                </div>
-                <div class="col-xl-2 col-md-4 col-sm-4 col-12">
-                    <h6 class="mb-3 mb-lg-4 text-muted bold-text mt-sm-0 mt-5"><b>ADDRESS</b></h6>
-                    <p class="mb-1">605, RATAN ICON BUILDING</p>
-                    <p>SEAWOODS SECTOR</p>
-                </div>
-                </div>
-            
-           
-          
-         
-           
-           
-              <div class="row ">
-                <div class="col-xl-8 col-md-4 col-sm-4 col-auto my-md-0 mt-5 order-sm-1 order-3 align-self-end">
-                    <p class="social text-muted mb-0 pb-0 bold-text"> <span class="mx-2"><i class="fa fa-facebook" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-twitter" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-instagram" aria-hidden="true"></i></span> </p><small class="rights"><span>&#174;</span> Pepper All Rights Reserved.</small>
-                </div>
-                <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-1 align-self-end ">
-                    <h6 class="mt-55 mt-2 text-muted bold-text"><b>ANIRUDH SINGLA</b></h6><small> <span><i class="fa fa-envelope" aria-hidden="true"></i></span> anirudh@gmail.com</small>
-                </div>
-                <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-2 align-self-end mt-3 ">
-                    <h6 class="text-muted bold-text"><b>RISHABH SHEKHAR</b></h6><small><span><i class="fa fa-envelope" aria-hidden="true"></i></span> rishab@gmail.com</small>
-                </div>
+    <footer class="bg-dark">
+      <br>
+      <div class="container">
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="container">
+            <div class="row align-items-center text-center">
+              <div class="col">
+                <p class="social text-muted mb-0 pb-0 bold-text">
+                  <a href=""><span class="mx-2"><i class="fa fa-facebook" aria-hidden="true"></i></span> </a>
+                  <a href=""><span class="mx-2"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span></a>
+                  <a href=""><span class="mx-2"><i class="fa fa-twitter" aria-hidden="true"></i></span></a>
+                  <a href=""><span class="mx-2"><i class="fa fa-instagram" aria-hidden="true"></i></span> </p></a>
+                <small class="rights"><span>&#174;</span> Miguel Gutierrez All Rights Reserved.</small>
+              </div>
+  
             </div>
-            
-            
-         
+          </div>
         </div>
+  
       </div>
-    </div>
-  </footer>
+  
+    </footer>
 
-  <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="../js/jquery.slim.min.js"></script>
-  <script src="../js/popper.min.js"></script>
-  <script src="../js/bootstrap.min.js"></script>
- 
-  <script src=" ../js/wow.min.js "></script>
-  <script>
-    new WOW().init();
-  </script>
 
-  <script src=" ../js/main.js "></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="../js/jquery.slim.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+    <script src=" ../js/wow.min.js "></script>
+    <script>
+      new WOW().init();
+    </script>
+
+    <script src=" ../js/main.js "></script>
 </body>
 
 </html>

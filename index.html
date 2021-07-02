@@ -11,22 +11,24 @@
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/animate.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <title>Developer Web</title>
 </head>
 
 <body class="hidden">
- <div class="centrado" id="preloader">
-  <div class="lds-grid">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
+  <div class="centrado" id="preloader">
+    <div class="lds-grid">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
 
   </div>
 
@@ -38,7 +40,7 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav ml-auto" id="menulink">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="index.html">
             Home</a>
@@ -62,15 +64,17 @@
 
   <div class="main">
     <section id="home">
-      <div class="d-flex justify-content-center align-items-center">
+      <div class="d-flex mt-5 ">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-md-5">
+            <div class="col-md-5" style="display: flex;justify-content: center;align-items: center;">
               <br />
               <br />
               <br />
-              <img class="img-fluid" src="css/img/web_developer.svg" alt="" />
+              <lottie-player src="css/img/ima-home.json" background="transparent" speed="1"
+                style="width: 35vw; height: 35vw;" loop autoplay></lottie-player>
             </div>
+            <br>
             <br>
             <div class="col-md-7">
               <h1><span class="typed"></span></h1>
@@ -96,14 +100,14 @@
         <div class="container">
           <div class="row align-items-center text-center">
             <div class="col-md-1"></div>
-            <div class="col-md-2 icon">
+            <div class="col-md-2 icon animate__animated animate__heartBeat animate__delay-1s">
               <a class="whatsapp-icon" href=""><img src="css/img/Whatsapp_icon.svg" alt="" /></a>
               <br />
               <br />
               <h4>Whats App</h4>
             </div>
             <div class="col-md-2"></div>
-            <div class="col-md-2 icon">
+            <div class=" col-md-2 icon animate__animated animate__heartBeat animate__delay-1s">
               <a href=""><img src="css/img/Google_icon.svg" alt="" /></a>
 
               <br />
@@ -111,7 +115,7 @@
               <h4>Email</h4>
             </div>
             <div class="col-md-2"></div>
-            <div class="col-md-2 icon">
+            <div class="col-md-2 icon animate__animated animate__heartBeat animate__delay-1s">
               <a href=""><img src="css/img/github_icon.svg" alt="" /></a>
               <br />
               <br />
@@ -122,60 +126,32 @@
         </div>
       </div>
     </section>
-  
-    
+
+
   </div>
-<br><br><br><br>
-  <footer class="bg-dark text-white">
+  <br><br><br><br>
+  <br><br><br><br>
+  <footer class="bg-dark">
     <br>
-    <div class="container ">
-      <div class="d-flex justify-content-center ">
-        <div class="container col-11">
-          
-            
-            
-              <div class="row ">
-                <div class="col-xl-8 col-md-4 col-sm-4 col-12 my-auto mx-auto a">
-                    <h3 class="text-muted mb-md-0 mb-5 bold-text">Pepper.</h3>
-                </div>
-                <div class="col-xl-2 col-md-4 col-sm-4 col-12">
-                    <h6 class="mb-3 mb-lg-4 bold-text "><b>MENU</b></h6>
-                    <ul class="list-unstyled">
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Blog</li>
-                        <li>Portfolio</li>
-                    </ul>
-                </div>
-                <div class="col-xl-2 col-md-4 col-sm-4 col-12">
-                    <h6 class="mb-3 mb-lg-4 text-muted bold-text mt-sm-0 mt-5"><b>ADDRESS</b></h6>
-                    <p class="mb-1">605, RATAN ICON BUILDING</p>
-                    <p>SEAWOODS SECTOR</p>
-                </div>
-                </div>
-            
-           
-          
-         
-           
-           
-              <div class="row ">
-                <div class="col-xl-8 col-md-4 col-sm-4 col-auto my-md-0 mt-5 order-sm-1 order-3 align-self-end">
-                    <p class="social text-muted mb-0 pb-0 bold-text"> <span class="mx-2"><i class="fa fa-facebook" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-twitter" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-instagram" aria-hidden="true"></i></span> </p><small class="rights"><span>&#174;</span> Pepper All Rights Reserved.</small>
-                </div>
-                <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-1 align-self-end ">
-                    <h6 class="mt-55 mt-2 text-muted bold-text"><b>ANIRUDH SINGLA</b></h6><small> <span><i class="fa fa-envelope" aria-hidden="true"></i></span> anirudh@gmail.com</small>
-                </div>
-                <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-2 align-self-end mt-3 ">
-                    <h6 class="text-muted bold-text"><b>RISHABH SHEKHAR</b></h6><small><span><i class="fa fa-envelope" aria-hidden="true"></i></span> rishab@gmail.com</small>
-                </div>
+    <div class="container">
+      <div class="d-flex justify-content-center align-items-center">
+        <div class="container">
+          <div class="row align-items-center text-center">
+            <div class="col">
+              <p class="social text-muted mb-0 pb-0 bold-text">
+                <a href=""><span class="mx-2"><i class="fa fa-facebook" aria-hidden="true"></i></span> </a>
+                <a href=""><span class="mx-2"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span></a>
+                <a href=""><span class="mx-2"><i class="fa fa-twitter" aria-hidden="true"></i></span></a>
+                <a href=""><span class="mx-2"><i class="fa fa-instagram" aria-hidden="true"></i></span> </p></a>
+              <small class="rights"><span>&#174;</span> Miguel Gutierrez All Rights Reserved.</small>
             </div>
-            
-            
-         
+
+          </div>
         </div>
       </div>
+
     </div>
+
   </footer>
 
   <!-- Option 1: Bootstrap Bundle with Popper -->
